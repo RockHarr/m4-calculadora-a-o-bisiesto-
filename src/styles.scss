@@ -1,0 +1,17 @@
+/* styles.scss */
+:root {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Ajuste suave para SweetAlert2 para que “combine” con Bootstrap */
+.swal2-popup {
+  border-radius: 1rem !important;
+}
+
+.swal2-title {
+  line-height: 1.2;
+}

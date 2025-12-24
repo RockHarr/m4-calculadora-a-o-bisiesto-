@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Días del mes (Bootstrap 5 + SweetAlert2)</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+  <!-- Tu CSS compilado desde src/styles.scss -->
+  <!-- Ajusta la ruta según tu build -->
+  <link rel="stylesheet" href="./dist/styles.css">
+</head>
+
+<body class="bg-light">
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h1 class="h4 mb-2">Días del mes</h1>
+            <p class="text-secondary mb-4">
+              Ingresa <strong>año</strong> y <strong>mes</strong>. Se considera año bisiesto automáticamente.
+            </p>
+
+            <div class="d-grid gap-2">
+              <button id="btnIniciar" class="btn btn-primary btn-lg">
+                Iniciar
+              </button>
+              <button id="btnDemo" class="btn btn-outline-secondary">
+                Demo rápida (2024, Febrero)
+              </button>
+            </div>
+
+            <hr class="my-4">
+
+            <p class="small text-secondary mb-0">
+              Hecho con Bootstrap 5 + SweetAlert2 (ES6+).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap Bundle JS (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Tu JS -->
+  <script type="module" src="./src/index.js"></script>
+</body>
+</html>
